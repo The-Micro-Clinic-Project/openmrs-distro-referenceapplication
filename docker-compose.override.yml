@@ -1,5 +1,13 @@
 # version: "3.7"
 
+secrets:
+  m2settings:
+    file: ~/.m2/settings.xml
+
+secrets:
+  m2settings:
+    file: ~/.m2/settings.xml
+
 services:
   certbot:
     build:
@@ -15,4 +23,6 @@ services:
 
   backend:
     build:
+      secrets:
+        - m2settings
       context: .

@@ -169,6 +169,14 @@
         <updatePolicy>interval:10080</updatePolicy>
       </snapshots>
     </repository>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages - The Micro Clinic Project</name>
+      <url>https://maven.pkg.github.com/The-Micro-Clinic-Project/microclinicproject-content</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
   </repositories>
 
   <pluginRepositories>
