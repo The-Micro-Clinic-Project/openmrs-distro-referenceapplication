@@ -5,9 +5,9 @@ https://dev3.openmrs.org and https://o3.openmrs.org.
 
 ## Quick start
 
-### Run the app (using pre-built images)
-
+### Run the app
 ```bash
+docker compose build
 docker compose up
 ```
 
