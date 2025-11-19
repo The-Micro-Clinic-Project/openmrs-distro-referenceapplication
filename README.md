@@ -43,7 +43,7 @@ The project is using the microclinicproject-content package, which is currently 
   <servers>
     <server>
       <id>github</id>
-      <username>vasharma05</username>
+      <username><your github username></username>
       <password><your access token></password>
     </server>
   </servers>
