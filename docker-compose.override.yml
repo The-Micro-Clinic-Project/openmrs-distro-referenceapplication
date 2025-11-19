@@ -4,10 +4,6 @@ secrets:
   m2settings:
     file: ~/.m2/settings.xml
 
-secrets:
-  m2settings:
-    file: ~/.m2/settings.xml
-
 services:
   certbot:
     build:
