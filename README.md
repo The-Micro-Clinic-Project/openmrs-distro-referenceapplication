@@ -34,6 +34,22 @@ docker compose -f docker-compose.yml -f docker-compose.ssl.yml up
 
 See the [SSL/HTTPS Configuration](#sslhttps-configuration) section for detailed setup instructions.
 
+## Add github server setting to your settings.xml
+The project is using the microclinicproject-content package, which is currently hosted on the github, and to access it, the developer needs to add the following server setting to `~/.m2/settings.xml`
+
+```
+<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <servers>
+    <server>
+      <id>github</id>
+      <username>vasharma05</username>
+      <password><your access token></password>
+    </server>
+  </servers>
+</settings>
+````
+
 ## Overview
 
 This distribution consists of four images:
